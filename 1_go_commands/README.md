@@ -1,0 +1,5 @@
+- get
+- run
+- fmt
+- test
+- build

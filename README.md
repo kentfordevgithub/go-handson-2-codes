@@ -21,9 +21,3 @@ export PATH=$PATH:$GOPATH/bin
 "go.gopath": "環境変数GOAPTHを同じパス",
 }
 ```
-
-# スライド
-
-## 下書き
-
-https://docs.google.com/presentation/d/1UQvIUzm5lNLaJYDUb_k4_HulE9HnkHbD9cbC65p9Y2Y/edit#slide=id.g45a083210b_0_109

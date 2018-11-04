@@ -65,7 +65,8 @@ ok   _/home/yukpiz/labo/repos/private/go-test/example1	0.001s
 ```
 $ go test -v .
 === RUN   TestSum
---- PASS: TestSum (0.00s) PASS ok   _/home/yukpiz/labo/repos/private/go-test/example1	0.001s
+--- PASS: TestSum (0.00s) PASS
+ok   _/home/yukpiz/labo/repos/private/go-test/example1	0.001s
 ```
 
 コードカバレッジの機能もついています、-coverオプションで利用してみましょう。  
@@ -74,7 +75,8 @@ $ go test -v .
 $ go test -v -cover
 === RUN   TestSum
 --- PASS: TestSum (0.00s)
-PASS coverage: 100.0% of statements ok   _/home/yukpiz/labo/repos/private/go-test/example1	0.001s
+PASS coverage: 100.0% of statements
+ok   _/home/yukpiz/labo/repos/private/go-test/example1	0.001s
 ```
 
 Go言語では標準でシンプルなユニットテストの機能が使える事がわかりました。  

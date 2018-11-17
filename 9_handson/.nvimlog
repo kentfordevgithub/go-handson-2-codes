@@ -1,0 +1,147 @@
+INFO  2018-11-17T19:53:32.057 15598 on_process_exit:385: exited: pid=19385 status=2 stoptime=0
+INFO  2018-11-17T19:53:49.370 15598 on_process_exit:385: exited: pid=19550 status=0 stoptime=0
+INFO  2018-11-17T19:53:52.093 15598 on_process_exit:385: exited: pid=19671 status=0 stoptime=0
+INFO  2018-11-17T19:53:53.237 15598 on_process_exit:385: exited: pid=19788 status=0 stoptime=0
+INFO  2018-11-17T19:53:54.345 15598 on_process_exit:385: exited: pid=19905 status=0 stoptime=0
+INFO  2018-11-17T19:53:55.602 15598 on_process_exit:385: exited: pid=20017 status=0 stoptime=0
+INFO  2018-11-17T19:54:21.805 15598 on_process_exit:385: exited: pid=20204 status=0 stoptime=0
+INFO  2018-11-17T19:54:24.868 15598 on_process_exit:385: exited: pid=20329 status=0 stoptime=0
+INFO  2018-11-17T19:54:25.999 15598 on_process_exit:385: exited: pid=20447 status=0 stoptime=0
+INFO  2018-11-17T19:54:27.179 15598 on_process_exit:385: exited: pid=20562 status=0 stoptime=0
+INFO  2018-11-17T19:54:28.228 15598 on_process_exit:385: exited: pid=20678 status=0 stoptime=0
+INFO  2018-11-17T20:06:54.773 15598 on_process_exit:385: exited: pid=22931 status=2 stoptime=0
+INFO  2018-11-17T20:13:02.980 15598 on_process_exit:385: exited: pid=24028 status=0 stoptime=0
+INFO  2018-11-17T20:13:04.783 15598 on_process_exit:385: exited: pid=24153 status=0 stoptime=0
+INFO  2018-11-17T20:13:07.394 15598 on_process_exit:385: exited: pid=24263 status=0 stoptime=0
+INFO  2018-11-17T20:13:08.631 15598 on_process_exit:385: exited: pid=24371 status=0 stoptime=0
+INFO  2018-11-17T20:13:25.158 15598 on_process_exit:385: exited: pid=24525 status=0 stoptime=0
+INFO  2018-11-17T20:13:26.515 15598 on_process_exit:385: exited: pid=24651 status=0 stoptime=0
+INFO  2018-11-17T20:14:27.524 15598 on_process_exit:385: exited: pid=25016 status=1 stoptime=0
+INFO  2018-11-17T20:14:46.862 15598 on_process_exit:385: exited: pid=25247 status=1 stoptime=0
+INFO  2018-11-17T20:16:09.649 15598 on_process_exit:385: exited: pid=25453 status=1 stoptime=0
+INFO  2018-11-17T20:16:23.603 15598 on_process_exit:385: exited: pid=25641 status=1 stoptime=0
+INFO  2018-11-17T20:16:30.120 15598 on_process_exit:385: exited: pid=25820 status=0 stoptime=0
+INFO  2018-11-17T20:17:28.637 15598 on_process_exit:385: exited: pid=26114 status=0 stoptime=0
+INFO  2018-11-17T20:17:33.745 15598 on_process_exit:385: exited: pid=26279 status=0 stoptime=0
+INFO  2018-11-17T20:17:36.681 15598 on_process_exit:385: exited: pid=26413 status=0 stoptime=0
+INFO  2018-11-17T20:18:44.607 15598 on_process_exit:385: exited: pid=26681 status=0 stoptime=0
+INFO  2018-11-17T20:18:47.775 15598 on_process_exit:385: exited: pid=26807 status=0 stoptime=0
+INFO  2018-11-17T20:18:49.863 15598 on_process_exit:385: exited: pid=26929 status=0 stoptime=0
+INFO  2018-11-17T20:19:06.676 15598 on_process_exit:385: exited: pid=27122 status=0 stoptime=0
+INFO  2018-11-17T20:19:09.696 15598 on_process_exit:385: exited: pid=27247 status=0 stoptime=0
+INFO  2018-11-17T20:19:12.048 15598 on_process_exit:385: exited: pid=27367 status=0 stoptime=0
+INFO  2018-11-17T20:19:23.484 15598 on_process_exit:385: exited: pid=27527 status=0 stoptime=0
+INFO  2018-11-17T20:19:30.266 15598 on_process_exit:385: exited: pid=27702 status=0 stoptime=0
+INFO  2018-11-17T20:19:43.072 15598 on_process_exit:385: exited: pid=27881 status=0 stoptime=0
+INFO  2018-11-17T20:19:48.984 15598 on_process_exit:385: exited: pid=28006 status=0 stoptime=0
+INFO  2018-11-17T20:19:52.030 15598 on_process_exit:385: exited: pid=28129 status=0 stoptime=0
+INFO  2018-11-17T20:20:17.706 28641 on_process_exit:385: exited: pid=28643 status=0 stoptime=0
+INFO  2018-11-17T20:20:17.708 28641 channel_create_event:208: new channel 3 (function remote#define#FunctionBootstrap[1]..remote#host#Require[10]..provider#pythonx#Require[13]..provider#Poll:3) : {"id": 3, "client": {}, "mode": "rpc", "stream": "job"}
+INFO  2018-11-17T20:20:17.832 28641 on_process_exit:385: exited: pid=28721 status=0 stoptime=0
+INFO  2018-11-17T20:20:17.832 28641 main:590: starting main loop
+INFO  2018-11-17T20:20:17.910 28641 channel_create_event:208: new channel 4 (/tmp/nvimMH3em6/0) : {"id": 4, "client": {}, "mode": "rpc", "stream": "socket"}
+INFO  2018-11-17T20:20:17.912 28641 channel_create_event:208: new channel 5 (/tmp/nvimMH3em6/0) : {"id": 5, "client": {}, "mode": "rpc", "stream": "socket"}
+INFO  2018-11-17T20:20:17.919 28641 channel_create_event:208: new channel 6 (/tmp/nvimMH3em6/0) : {"id": 6, "client": {}, "mode": "rpc", "stream": "socket"}
+INFO  2018-11-17T20:20:17.925 28641 channel_create_event:208: new channel 7 (/tmp/nvimMH3em6/0) : {"id": 7, "client": {}, "mode": "rpc", "stream": "socket"}
+INFO  2018-11-17T20:20:20.838 28641 channel_create_event:208: new channel 8 (function provider#clipboard#Call[6]..278[2]..278:25) : {"id": 8, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:20:20.841 28641 channel_create_event:208: new channel 9 (function provider#clipboard#Call[6]..278[4]..278:25) : {"id": 9, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:20:23.301 28641 os_proc_tree_kill:96: sending SIGTERM to process group: -28727
+INFO  2018-11-17T20:20:23.304 28641 channel_create_event:208: new channel 10 (function provider#clipboard#Call[6]..278[2]..278:25) : {"id": 10, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:20:23.305 28641 os_proc_tree_kill:96: sending SIGTERM to process group: -28728
+INFO  2018-11-17T20:20:23.309 28641 channel_create_event:208: new channel 11 (function provider#clipboard#Call[6]..278[4]..278:25) : {"id": 11, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:20:23.310 28641 on_process_exit:385: exited: pid=28727 status=0 stoptime=21107062236031
+INFO  2018-11-17T20:20:23.310 28641 on_process_exit:385: exited: pid=28728 status=0 stoptime=21107066397732
+INFO  2018-11-17T20:20:28.415 28641 on_process_exit:385: exited: pid=28733 status=0 stoptime=0
+INFO  2018-11-17T20:20:30.391 28641 os_proc_tree_kill:96: sending SIGTERM to process group: -28730
+INFO  2018-11-17T20:20:30.394 28641 channel_create_event:208: new channel 12 (function provider#clipboard#Call[6]..278[2]..278:25) : {"id": 12, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:20:30.395 28641 os_proc_tree_kill:96: sending SIGTERM to process group: -28732
+INFO  2018-11-17T20:20:30.398 28641 channel_create_event:208: new channel 13 (function provider#clipboard#Call[6]..278[4]..278:25) : {"id": 13, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:20:30.399 28641 on_process_exit:385: exited: pid=28730 status=0 stoptime=21114152159078
+INFO  2018-11-17T20:20:30.399 28641 on_process_exit:385: exited: pid=28732 status=0 stoptime=21114156222799
+INFO  2018-11-17T20:20:32.054 28641 os_proc_tree_kill:96: sending SIGTERM to process group: -28768
+INFO  2018-11-17T20:20:32.058 28641 channel_create_event:208: new channel 14 (function provider#clipboard#Call[6]..278[2]..278:25) : {"id": 14, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:20:32.058 28641 os_proc_tree_kill:96: sending SIGTERM to process group: -28770
+INFO  2018-11-17T20:20:32.061 28641 channel_create_event:208: new channel 15 (function provider#clipboard#Call[6]..278[4]..278:25) : {"id": 15, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:20:32.062 28641 on_process_exit:385: exited: pid=28768 status=0 stoptime=21115815516979
+INFO  2018-11-17T20:20:32.062 28641 on_process_exit:385: exited: pid=28770 status=0 stoptime=21115819632614
+INFO  2018-11-17T20:20:33.165 28641 on_process_exit:385: exited: pid=28775 status=0 stoptime=0
+INFO  2018-11-17T20:20:36.500 28641 os_proc_tree_kill:96: sending SIGTERM to process group: -28772
+INFO  2018-11-17T20:20:36.504 28641 channel_create_event:208: new channel 16 (function provider#clipboard#Call[6]..278[2]..278:25) : {"id": 16, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:20:36.504 28641 os_proc_tree_kill:96: sending SIGTERM to process group: -28774
+INFO  2018-11-17T20:20:36.508 28641 channel_create_event:208: new channel 17 (function provider#clipboard#Call[6]..278[4]..278:25) : {"id": 17, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:20:36.509 28641 on_process_exit:385: exited: pid=28772 status=0 stoptime=21120261803591
+INFO  2018-11-17T20:20:36.509 28641 on_process_exit:385: exited: pid=28774 status=0 stoptime=21120265872169
+INFO  2018-11-17T20:20:36.787 28641 os_proc_tree_kill:96: sending SIGTERM to process group: -28810
+INFO  2018-11-17T20:20:36.791 28641 channel_create_event:208: new channel 18 (function provider#clipboard#Call[6]..278[2]..278:25) : {"id": 18, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:20:36.792 28641 os_proc_tree_kill:96: sending SIGTERM to process group: -28812
+INFO  2018-11-17T20:20:36.796 28641 channel_create_event:208: new channel 19 (function provider#clipboard#Call[6]..278[4]..278:25) : {"id": 19, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:20:36.796 28641 on_process_exit:385: exited: pid=28810 status=0 stoptime=21120549020943
+INFO  2018-11-17T20:20:36.797 28641 on_process_exit:385: exited: pid=28812 status=0 stoptime=21120553119271
+INFO  2018-11-17T20:20:37.389 28641 on_process_exit:385: exited: pid=28817 status=0 stoptime=0
+INFO  2018-11-17T20:20:49.600 28641 os_proc_tree_kill:96: sending SIGTERM to process group: -28814
+INFO  2018-11-17T20:20:49.603 28641 channel_create_event:208: new channel 20 (function provider#clipboard#Call[6]..278[2]..278:25) : {"id": 20, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:20:49.604 28641 os_proc_tree_kill:96: sending SIGTERM to process group: -28816
+INFO  2018-11-17T20:20:49.606 28641 channel_create_event:208: new channel 21 (function provider#clipboard#Call[6]..278[4]..278:25) : {"id": 21, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:20:49.607 28641 on_process_exit:385: exited: pid=28814 status=0 stoptime=21133361253509
+INFO  2018-11-17T20:20:49.607 28641 on_process_exit:385: exited: pid=28816 status=0 stoptime=21133365562012
+INFO  2018-11-17T20:20:50.203 28641 os_proc_tree_kill:96: sending SIGTERM to process group: -28870
+INFO  2018-11-17T20:20:50.208 28641 channel_create_event:208: new channel 22 (function provider#clipboard#Call[6]..278[2]..278:25) : {"id": 22, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:20:50.208 28641 os_proc_tree_kill:96: sending SIGTERM to process group: -28872
+INFO  2018-11-17T20:20:50.211 28641 channel_create_event:208: new channel 23 (function provider#clipboard#Call[6]..278[4]..278:25) : {"id": 23, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:20:50.211 28641 on_process_exit:385: exited: pid=28870 status=0 stoptime=21133964944625
+INFO  2018-11-17T20:20:50.211 28641 on_process_exit:385: exited: pid=28872 status=0 stoptime=21133970072130
+INFO  2018-11-17T20:20:51.596 28641 os_proc_tree_kill:96: sending SIGTERM to process group: -28874
+INFO  2018-11-17T20:20:51.600 28641 channel_create_event:208: new channel 24 (function provider#clipboard#Call[6]..278[2]..278:25) : {"id": 24, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:20:51.600 28641 os_proc_tree_kill:96: sending SIGTERM to process group: -28876
+INFO  2018-11-17T20:20:51.602 28641 channel_create_event:208: new channel 25 (function provider#clipboard#Call[6]..278[4]..278:25) : {"id": 25, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:20:51.603 28641 on_process_exit:385: exited: pid=28874 status=0 stoptime=21135357721242
+INFO  2018-11-17T20:20:51.603 28641 on_process_exit:385: exited: pid=28876 status=0 stoptime=21135361953917
+INFO  2018-11-17T20:20:52.031 28641 os_proc_tree_kill:96: sending SIGTERM to process group: -28878
+INFO  2018-11-17T20:20:52.035 28641 channel_create_event:208: new channel 26 (function provider#clipboard#Call[6]..278[2]..278:25) : {"id": 26, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:20:52.036 28641 os_proc_tree_kill:96: sending SIGTERM to process group: -28880
+INFO  2018-11-17T20:20:52.038 28641 channel_create_event:208: new channel 27 (function provider#clipboard#Call[6]..278[4]..278:25) : {"id": 27, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:20:52.039 28641 on_process_exit:385: exited: pid=28878 status=0 stoptime=21135793053386
+INFO  2018-11-17T20:20:52.039 28641 on_process_exit:385: exited: pid=28880 status=0 stoptime=21135797381942
+INFO  2018-11-17T20:20:52.967 28641 os_proc_tree_kill:96: sending SIGTERM to process group: -28882
+INFO  2018-11-17T20:20:52.971 28641 channel_create_event:208: new channel 28 (function provider#clipboard#Call[6]..278[2]..278:25) : {"id": 28, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:20:52.972 28641 os_proc_tree_kill:96: sending SIGTERM to process group: -28884
+INFO  2018-11-17T20:20:52.975 28641 channel_create_event:208: new channel 29 (function provider#clipboard#Call[6]..278[4]..278:25) : {"id": 29, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:20:52.975 28641 on_process_exit:385: exited: pid=28882 status=0 stoptime=21136728576305
+INFO  2018-11-17T20:20:52.975 28641 on_process_exit:385: exited: pid=28884 status=0 stoptime=21136733106525
+INFO  2018-11-17T20:20:56.478 28641 on_process_exit:385: exited: pid=28889 status=0 stoptime=0
+INFO  2018-11-17T20:20:58.099 28641 on_process_exit:385: exited: pid=28923 status=0 stoptime=0
+INFO  2018-11-17T20:21:00.164 28641 on_process_exit:385: exited: pid=29046 status=0 stoptime=0
+INFO  2018-11-17T20:21:02.896 28641 on_process_exit:385: exited: pid=29165 status=0 stoptime=0
+INFO  2018-11-17T20:21:04.186 28641 on_process_exit:385: exited: pid=29281 status=0 stoptime=0
+INFO  2018-11-17T20:21:05.656 28641 on_process_exit:385: exited: pid=29392 status=0 stoptime=0
+INFO  2018-11-17T20:21:10.722 28641 os_proc_tree_kill:96: sending SIGTERM to process group: -28886
+INFO  2018-11-17T20:21:10.726 28641 channel_create_event:208: new channel 30 (function provider#clipboard#Call[6]..278[2]..278:25) : {"id": 30, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:21:10.727 28641 os_proc_tree_kill:96: sending SIGTERM to process group: -28888
+INFO  2018-11-17T20:21:10.731 28641 channel_create_event:208: new channel 31 (function provider#clipboard#Call[6]..278[4]..278:25) : {"id": 31, "mode": "bytes", "stream": "job"}
+INFO  2018-11-17T20:21:10.732 28641 on_process_exit:385: exited: pid=28886 status=0 stoptime=21154483733345
+INFO  2018-11-17T20:21:10.732 28641 on_process_exit:385: exited: pid=28888 status=0 stoptime=21154488338491
+INFO  2018-11-17T20:21:15.551 28641 on_process_exit:385: exited: pid=29509 status=0 stoptime=0
+INFO  2018-11-17T20:21:19.695 28641 os_proc_tree_kill:96: sending SIGTERM to process group: -28682
+INFO  2018-11-17T20:21:19.721 28641 on_process_exit:385: exited: pid=28682 status=0 stoptime=21163457090700
+INFO  2018-11-17T20:21:19.722 28641 mch_exit:152: Nvim exit: 0
+INFO  2018-11-17T20:21:22.400 29586 on_process_exit:385: exited: pid=29588 status=0 stoptime=0
+INFO  2018-11-17T20:21:22.402 29586 channel_create_event:208: new channel 3 (function remote#define#FunctionBootstrap[1]..remote#host#Require[10]..provider#pythonx#Require[13]..provider#Poll:3) : {"id": 3, "client": {}, "mode": "rpc", "stream": "job"}
+INFO  2018-11-17T20:21:22.499 29586 on_process_exit:385: exited: pid=29666 status=0 stoptime=0
+INFO  2018-11-17T20:21:22.499 29586 main:590: starting main loop
+INFO  2018-11-17T20:21:22.571 29586 channel_create_event:208: new channel 4 (/tmp/nvimS8cCfb/0) : {"id": 4, "client": {}, "mode": "rpc", "stream": "socket"}
+INFO  2018-11-17T20:21:22.571 29586 channel_create_event:208: new channel 5 (/tmp/nvimS8cCfb/0) : {"id": 5, "client": {}, "mode": "rpc", "stream": "socket"}
+INFO  2018-11-17T20:21:22.576 29586 channel_create_event:208: new channel 6 (/tmp/nvimS8cCfb/0) : {"id": 6, "client": {}, "mode": "rpc", "stream": "socket"}
+INFO  2018-11-17T20:21:22.577 29586 channel_create_event:208: new channel 7 (/tmp/nvimS8cCfb/0) : {"id": 7, "client": {}, "mode": "rpc", "stream": "socket"}
+INFO  2018-11-17T20:21:28.419 29586 on_process_exit:385: exited: pid=29672 status=0 stoptime=0
+INFO  2018-11-17T20:21:37.248 29586 on_process_exit:385: exited: pid=29797 status=0 stoptime=0
+INFO  2018-11-17T20:21:43.876 29586 on_process_exit:385: exited: pid=29913 status=0 stoptime=0
+INFO  2018-11-17T20:21:46.557 29586 on_process_exit:385: exited: pid=29964 status=0 stoptime=0
+INFO  2018-11-17T20:21:47.841 29586 on_process_exit:385: exited: pid=29998 status=0 stoptime=0
+INFO  2018-11-17T20:21:52.994 29586 on_process_exit:385: exited: pid=30120 status=0 stoptime=0
+INFO  2018-11-17T20:21:54.276 29586 on_process_exit:385: exited: pid=30154 status=0 stoptime=0
+INFO  2018-11-17T20:21:58.638 29586 on_process_exit:385: exited: pid=30269 status=0 stoptime=0
+INFO  2018-11-17T20:21:59.779 29586 on_process_exit:385: exited: pid=30303 status=0 stoptime=0
+INFO  2018-11-17T20:38:21.955 29586 on_process_exit:385: exited: pid=30899 status=0 stoptime=0
+INFO  2018-11-17T20:38:41.419 29586 os_proc_tree_kill:96: sending SIGTERM to process group: -29627
+INFO  2018-11-17T20:38:41.444 29586 on_process_exit:385: exited: pid=29627 status=0 stoptime=22205180284016
+INFO  2018-11-17T20:38:41.444 29586 mch_exit:152: Nvim exit: 0

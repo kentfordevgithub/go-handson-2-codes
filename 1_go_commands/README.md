@@ -12,10 +12,10 @@
 下記のコマンドを実行。
 
 ```
-$ go get github.com/labstack/echo
+$ go get -u github.com/rickb777/date
 ```
 
-```$GOPATH/src/```配下に、```github.com/labstack/echo```があれば```echo```を```go get```できています。
+```$GOPATH/src/```配下に、```github.com/rickb777/date```があれば```echo```を```go get```できています。
 確認してみましょう。
 
 
@@ -27,7 +27,7 @@ $ go get github.com/labstack/echo
 
 ## 実践
 
-```main.go```のコードを使って、```go get```した```echo```を使ったHTTPサーバを立ててみよう。
+```main.go```のコードを使って、```go get```した```date```を使ってみよう。
 
 ソース。
 
@@ -35,17 +35,15 @@ $ go get github.com/labstack/echo
 package main
 
 import (
-	"net/http"
+	"fmt"
+	"time"
 
-	"github.com/labstack/echo"
+	"github.com/rickb777/date"
 )
 
 func main() {
-	e := echo.New()
-	e.GET("/", func(c echo.Context) error {
-		return c.String(http.StatusOK, "Hello, World!")
-	})
-	e.Start(":80")
+	date := date.New(2018, time.November, 27)
+	fmt.Println(date)
 }
 ```
 
@@ -58,6 +56,9 @@ $ go run main.go
 $ go run .
 $ go run ./
 ```
+
+出力として、```2018-11-27```が表示される。
+
 
 # fmt
 
@@ -84,15 +85,12 @@ $ go fmt ./...
 ```
 package main
 import (
-"net/http"
-"github.com/labstack/echo"
+"fmt"
+"github.com/rickb777/date"
+"time"
 )
 func main(){
-e := echo.New()
-e.GET("/",func(c echo.Context) error {
-return c.String(http.StatusOK, "Hello, World!")
-})
-e.Start(":80")
+date := date.New(2018, time.November, 27); fmt.Println(date)
 }
 ```
 
@@ -102,16 +100,14 @@ e.Start(":80")
 package main
 
 import (
-	"github.com/labstack/echo"
-	"net/http"
+	"fmt"
+	"github.com/rickb777/date"
+	"time"
 )
 
 func main() {
-	e := echo.New()
-	e.GET("/", func(c echo.Context) error {
-		return c.String(http.StatusOK, "Hello, World!")
-	})
-	e.Start(":80")
+	date := date.New(2018, time.November, 27)
+	fmt.Println(date)
 }
 ```
 

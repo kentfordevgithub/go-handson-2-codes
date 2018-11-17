@@ -1,3 +1,60 @@
+# テスト
+
+* Go言語は標準のtestingパッケージでユニットテスト、ベンチマークテストをサポートしています
+
+```
+example1/
+   - example1.go
+   - example1_test.go
+```
+
+```go
+package example1
+
+func Sum(x int, y int) int {
+  return x + y
+}
+```
+
+```go
+package example1
+
+import (
+  "testing"
+)
+
+// テスト用の関数はTestで始まる必要があります
+func TestSum(t *testing.T) {
+	// 関数の呼び出しと結果をチェックします
+	if example1.Sum(1, 2) != 3 {
+		t.Error("エラーです！")
+	}
+}
+```
+
+- - -
+
+* 実際に上記のテストを実行してみましょう
+* ``go test -v .``で詳細なテスト結果まで出力できます
+
+```
+$ go test -v .
+=== RUN   TestSum
+--- PASS: TestSum (0.00s) PASS
+ok   _/home/yukpiz/labo/repos/private/go-test/example1	0.001s
+```
+
+- - -
+
+
+
+
+
+
+以下、細かすぎる説明  
+
+- - -
+
 Go言語は標準で組み込まれているtestingパッケージでユニットテスト、  
 及びベンチマークテスト（ここでは割愛します）の機能をサポートしています。  
 
@@ -16,7 +73,7 @@ example1/
    - example1_test.go
 ```
 
-```
+```go
 package example1
 
 func Sum(x int, y int) int {
@@ -26,11 +83,10 @@ func Sum(x int, y int) int {
 
 この関数のテストは以下です。  
 
-```
-package example1_test
+```go
+package example1
 import (
   "testing" //testingパッケージのimport
-  "../example1" //テスト対象のパッケージ(説明は後述)
 )
 
 //Testから始まる関数名である必要があります

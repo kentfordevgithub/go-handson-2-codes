@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/rickb777/date"
 	"time"
+
+	"github.com/rickb777/date"
 )
 
 func main() {

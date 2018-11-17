@@ -22,7 +22,6 @@ func main() {
 	fmt.Println(v)
 }
 ```
-
 - - -
 
 * 前章のゴルーチンだけの実装だと、main関数はゴルーチンの実装を待たずに終了してしまう為、Sleepをしていました
@@ -36,18 +35,18 @@ import (
 )
 
 func main() {
-	ch := make(chan int)
+	ch := make(chan string)
 	go func() {
-		fmt.Println("goroutine!")
-		ch <- 99
+		ch <- "yukpiz"
 	}()
 
+	go func() {
+		ch <- "kent"
+	}()
+
+	fmt.Println(<-ch)
 	fmt.Println(<-ch)
 }
 ```
 
 - - -
-
-
-
-

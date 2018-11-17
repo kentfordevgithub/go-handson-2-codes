@@ -1,24 +1,16 @@
-/*
-go get github.com/labstack/echo
-*/
-
 package main
 
 import (
 	"net/http"
 
+	"github.com/kentfordevgithub/go-handson-2-codes/1_go_commands/pack"
 	"github.com/labstack/echo"
-	"github.com/labstack/echo/middleware"
 )
 
 func main() {
 	e := echo.New()
-	e.Use(middleware.Logger())
-	e.Use(middleware.Recover())
-	e.GET("/hello", hello)
-	e.Logger.Fatal(e.Start(":80"))
-}
-
-func hello(c echo.Context) error {
-	return c.String(http.StatusOK, "Hello, World!")
+	e.GET("/", func(c echo.Context) error {
+		return c.String(http.StatusOK, "Hello, World!"+pack.String())
+	})
+	e.Start(":80")
 }

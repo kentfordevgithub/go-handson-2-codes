@@ -130,6 +130,8 @@ func main() {
 プログラムをコンパイルし、実行ファイルを出力するコマンド。
 開発している環境とは別の環境の実行ファイルでも、オプションの設定を変えればそれ専用にコンパイルできる。(Windows環境で、Linux用バイナリを作るなど。)
 
+```GOOS```、```GOARCH```を指定することで、OSやCPUアーキテクチャに合わせたバイナリへコンパイルすることができる。(Windows上でLinuxで動くファイルを作るなど)
+
 ## 実践
 
 ```
@@ -143,6 +145,13 @@ $ go build -o output main.go
 $ go build .
 $ go build ./
 ```
+
+Windows向けのバイナリを出力する。名前は```main.exe```で出力される。
+
+```
+GOOS=windows GOARCH=386 go build main.go
+```
+
 
 # 補足
 

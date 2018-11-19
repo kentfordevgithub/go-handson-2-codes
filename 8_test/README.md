@@ -1,6 +1,7 @@
 # テスト
 
 * Go言語は標準のtestingパッケージでユニットテスト、ベンチマークテストをサポートしています
+* テストファイルに``_test.go``をつける事でテストとして実行できるようになります
 
 ```
 example1/
@@ -35,16 +36,40 @@ func TestSum(t *testing.T) {
 - - -
 
 * 実際に上記のテストを実行してみましょう
-* ``go test -v .``で詳細なテスト結果まで出力できます
+* ``go test``で実行ができます
+* ``go test -v``で詳細な実行結果を出力する事もできます
+* ``go test -cover``でコードカバレッジも出力する事もできます
 
 ```
-$ go test -v .
+$ go test
+PASS
+ok   _/home/yukpiz/labo/repos/private/go-test/example1	0.001s
+
+$ go test -v
 === RUN   TestSum
 --- PASS: TestSum (0.00s) PASS
+ok   _/home/yukpiz/labo/repos/private/go-test/example1	0.001s
+
+$ go test -v -cover
+=== RUN   TestSum
+--- PASS: TestSum (0.00s)
+PASS coverage: 100.0% of statements
 ok   _/home/yukpiz/labo/repos/private/go-test/example1	0.001s
 ```
 
 - - -
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

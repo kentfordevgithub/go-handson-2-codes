@@ -20,7 +20,7 @@ func (p Person) afterYearDummy() {
 }
 
 func main() {
-	p := Person{
+	p := &Person{
 		Age:  29,
 		Name: "kent",
 	}

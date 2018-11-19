@@ -32,7 +32,6 @@ func main() {
 	fmt.Println(p.Age)
 	p.afterYearDummy()
 	fmt.Println(p.Age)
-
 }
 
 func test1() {

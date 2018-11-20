@@ -2,7 +2,12 @@
 
 * チャネルはゴルーチン間のメッセージのやり取りをするものです
 * メッセージは型を指定できます
-* チャネルは**送信**と**受信**の操作を持っています
+
+* チャネルは以下の特性を持っています
+* キャパシティ
+* 受信
+* 送信
+* クローズ
 
 ```go
 package main
@@ -12,68 +17,94 @@ import (
 )
 
 func main() {
-	ch := make(chan int) //チャネルの初期化
+	ch := make(chan int, 5) //容量5のチャネルを初期化
 
 	go func() {
 		ch <- 99 //送信文
+		close(ch) //チャネルを閉じる
 	}()
 
-	v := <-ch //代入による受信式
-	fmt.Println(v)
+	v, closed := <-ch // 受信の2番目の返り値でcloseかどうかの判定を受け取れます
+
+	fmt.Println(v) // 99
+	fmt.Println(closed) // true
 }
 ```
 - - -
 
-* チャネルはキャパシティ(容量)があります
-* チャネルは実体に容量を持っていて、容量が足りない場合、送信側は容量が空くまでまたなければいけません
+* チャネルにはキャパシティ(容量)があります
+* チャネルのキャパシティは送信されたデータをバッファできるサイズです
+* 受信側が待機している場合は、バッファは使用されません
+* バッファの容量が足りなくなると、チャネルへの送信はブロックされます
 
 ```go
-package main
+ch := make(chan int) //容量0のチャネル
 
-func main() {
-	ch1 := make(chan int) //容量0のint型のチャネル
-	ch2 := make(chan int, 5) //容量5のint型のチャネル
-}
+go func() {
+	// 受信がないので、送信側はバッファに入れようとしますが、
+	// 容量が0なのでブロックされます
+	ch <- 99
+	fmt.Println("送信できない！")
+}()
+
+time.Sleep(60 * time.Second)
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* 前章のゴルーチンだけの実装だと、main関数はゴルーチンの実装を待たずに終了してしまう為、Sleepをしていました
-* チャネルを使うと、ゴルーチンからのメッセージの受信待ちをする事ができます
-
 ```go
-package main
+ch := make(chan int) //容量0のチャネル
 
-import (
-	"fmt"
-)
+go func() {
+	// 受信があるので、バッファは使用されずに送信できます
+	ch <- 99
+	fmt.Println("送信できる！")
+}()
 
-func main() {
-	ch := make(chan string)
-	go func() {
-		ch <- "yukpiz"
-	}()
-
-	go func() {
-		ch <- "kent"
-	}()
-
-	fmt.Println(<-ch)
-	fmt.Println(<-ch)
-}
+fmt.Println(<-ch)
+time.Sleep(60 * time.Second)
 ```
 
 - - -
+
+* チャネルは便利ですが、使い方によっては問題を起こしてしまう事もあります
+* 以下の例では受信側が処理の完了を待ち続けてしまいます
+
+```go
+done := make(chan bool)
+
+go func() {
+	// ... 何かの処理
+
+	// ここで例外などでゴルーチンを抜けてしまった場合、
+	// 受信側がdoneへの送信を待ち続けてしまう
+	done <- true
+}()
+
+fmt.Println(<-ch)
+fmt.Println("処理完了！")
+```
+
+```go
+ch := make(chan bool)
+
+go func() {
+	defer close(ch)
+	// ... 何かの処理
+	// 何が起きても最後にcloseされる
+}()
+
+fmt.Println(<-ch)
+fmt.Println("処理完了！")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+

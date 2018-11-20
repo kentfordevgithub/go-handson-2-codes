@@ -1,6 +1,12 @@
 # 概要
 
-（ここの章で何を説明するか記載してください）
+Goのコマンドを、主にプログラムの作成から実行までの間で、必要となるもの紹介します。
+
+- get
+- run
+- fmt
+- test
+- build
 
 # get
 
@@ -154,3 +160,23 @@ GOOS=windows GOARCH=386 go build main.go
 # 補足
 
 ```go fmt```と同じように、```go run```も```go build```も対象ファイルの部分にに```./```や```./...```を使うことができるが、対象ファイルを明確に指定することが実際のプロジェクトではでは多いかと思います。
+
+# ちなみに全部並べると下記
+
+- bug
+- build
+- clean
+- doc
+- env
+- fix
+- fmt
+- generate
+- get
+- install
+- list
+- mod
+- run
+- test
+- tool
+- version
+- vet

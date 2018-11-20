@@ -30,3 +30,5 @@ export PATH=$PATH:$GOPATH/bin
 - 並行処理 チャンネル
 - コーディング規約
 - ユニットテスト
+
+# test

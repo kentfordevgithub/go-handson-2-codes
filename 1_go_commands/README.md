@@ -23,8 +23,7 @@ Goのコマンドを、主にプログラムの作成から実行までの間で
 $ go get -u github.com/rickb777/date
 ```
 
-```$GOPATH/src/```配下に、```github.com/rickb777/date```があれば```echo```を```go get```できています。
-確認してみましょう。
+```$GOPATH/src/```配下に、```github.com/rickb777/date```があれば```date```を```go get```できています。
 
 
 # run

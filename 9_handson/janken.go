@@ -16,39 +16,34 @@ func main() {
 	COUNT := 1000000
 	rand.Seed(time.Now().UnixNano())
 
-	ch := make(chan int)
-
 	result := [3]int{}
 	for i := 0; i < COUNT; i++ {
-		go func() {
-			a := funcA()
-			b := funcB()
+		a := yukpiz()
+		b := kent()
 
-			switch {
-			case a == b:
-				ch <- 1
-			case a == PAA && b == GUU, a == GUU && b == CHOKI, a == CHOKI && b == PAA:
-				ch <- 2
-			case a == PAA && b == CHOKI, a == GUU && b == PAA, a == CHOKI && b == GUU:
-				ch <- 3
-			}
-		}()
+		switch {
+		case a == b:
+			result[0]++
+		case a == PAA && b == GUU, a == GUU && b == CHOKI, a == CHOKI && b == PAA:
+			result[1]++
+		case a == PAA && b == CHOKI, a == GUU && b == PAA, a == CHOKI && b == GUU:
+			result[2]++
+		default:
+			panic("(´・ω・｀)")
+		}
 	}
 
-	for i := 0; i < COUNT; i++ {
-		result[<-ch-1]++
-	}
-	fmt.Printf("あいこ: %d\n", result[0])
-	fmt.Printf("Aが勝ち: %d\n", result[1])
-	fmt.Printf("Bが勝ち: %d\n", result[2])
+	fmt.Printf("引分: %d\n", result[0])
+	fmt.Printf("勝利: %d\n", result[1])
+	fmt.Printf("敗北: %d\n", result[2])
 }
 
-func funcA() int {
+func yukpiz() int {
 	s := []int{PAA, GUU, CHOKI, CHOKI}
 	return s[rand.Intn(len(s))]
 }
 
-func funcB() int {
+func kent() int {
 	s := []int{PAA, GUU, GUU, CHOKI}
 	return s[rand.Intn(len(s))]
 }

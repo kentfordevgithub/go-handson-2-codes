@@ -14,6 +14,11 @@ func main() {
 
 	<-done
 	fmt.Println("exit!")
+
+	// 全て閉じられている事を確認
+	fmt.Println(<-ych)
+	fmt.Println(<-kch)
+	fmt.Println(<-done)
 }
 
 func yukpiz(ych chan int, kch chan int) {
@@ -33,6 +38,7 @@ func yukpiz(ych chan int, kch chan int) {
 			kch <- 3
 		}
 	}
+	close(kch)
 }
 
 func kent(ych chan int, kch chan int, done chan int) {
@@ -48,6 +54,7 @@ func kent(ych chan int, kch chan int, done chan int) {
 		case 3:
 			fmt.Printf("%s: 是非、行きましょう\n", name)
 			close(done)
+			close(ych)
 		}
 	}
 }
